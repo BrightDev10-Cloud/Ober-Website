@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ober - Travel Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/Navbar/Branding_dark.png" alt="Ober Logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Stay</a></li>
+                    <li><a href="#" class="nav-link">Explore</a></li>
+                    <li><a href="#" class="nav-link">Flight</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#" class="btn btn-primary">Contact <span class="arrow">→</span></a>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="assets/Ober_Thumbnail_Section.png" alt="A person cycling on a scenic road">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">Award-Winning Travel Experts</span>
+                    <h1>Escape to truly<br>Unforgettable<br>Adventures.</h1>
+                    <p>Discover hidden paths, vibrant city corners, and unforgettable landscapes, immersing yourself in authentic local culture and stories that will stay with you forever.</p>
+                </div>
+                
+                <div class="search-bar">
+                    <div class="search-item">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div class="search-content">
+                            <span class="label">Location</span>
+                            <select class="value">
+                                <option value="">Explore nearby destinations</option>
+                                <option value="big-sur">Big Sur, California</option>
+                                <option value="prescott">Prescott, Arizona</option>
+                                <option value="fort-myers">Fort Myers, Florida</option>
+                                <option value="tucson">Tucson, Arizona</option>
+                                <option value="st-joseph">St. Joseph, Michigan</option>
+                                <option value="madrid">Madrid, Spain</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="tokyo">Tokyo, Japan</option>
+                                <option value="bali">Bali, Indonesia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="search-item">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <div class="search-content">
+                            <span class="label">Activity</span>
+                            <select class="value">
+                                <option value="">All Activities</option>
+                                <option value="sailing">Sailing</option>
+                                <option value="climbing">Climbing</option>
+                                <option value="skiing">Skiing</option>
+                                <option value="hiking">Hiking</option>
+                                <option value="diving">Scuba Diving</option>
+                                <option value="surfing">Surfing</option>
+                                <option value="cycling">Cycling</option>
+                                <option value="cultural">Cultural Tours</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="search-item">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <div class="search-content">
+                            <span class="label">When</span>
+                            <input type="date" class="value" placeholder="Choose a Date">
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="search-item">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <div class="search-content">
+                            <span class="label">Guests</span>
+                            <select class="value">
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5">5 guests</option>
+                                <option value="6">6 guests</option>
+                                <option value="7">7 guests</option>
+                                <option value="8">8 guests</option>
+                                <option value="9">9 guests</option>
+                                <option value="10">10+ guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations -->
+        <section class="section destinations">
+            <div class="container">
+                <h2 class="section-title">Popular Destinations</h2>
+                <div class="grid-6">
+                    <div class="card destination-card">
+                        <img src="assets/img-1.png" alt="Big Sur">
+                        <div class="card-content">
+                            <h3>Big Sur</h3>
+                            <p>California, USA</p>
+                        </div>
+                    </div>
+                    <div class="card destination-card">
+                        <img src="assets/img-2.png" alt="Prescott">
+                        <div class="card-content">
+                            <h3>Prescott</h3>
+                            <p>Arizona, USA</p>
+                        </div>
+                    </div>
+                    <div class="card destination-card">
+                        <img src="assets/img-3.png" alt="Fort Mayers">
+                        <div class="card-content">
+                            <h3>Fort Mayers</h3>
+                            <p>Florida, USA</p>
+                        </div>
+                    </div>
+                    <div class="card destination-card">
+                        <img src="assets/img-4.png" alt="Tucson">
+                        <div class="card-content">
+                            <h3>Tucson</h3>
+                            <p>Arizona, USA</p>
+                        </div>
+                    </div>
+                    <div class="card destination-card">
+                        <img src="assets/img-5.png" alt="St. Joseph">
+                        <div class="card-content">
+                            <h3>St. Joseph</h3>
+                            <p>Michigan, USA</p>
+                        </div>
+                    </div>
+                     <div class="card destination-card">
+                        <img src="assets/img-6.png" alt="Madrid">
+                        <div class="card-content">
+                            <h3>Madrid</h3>
+                            <p>Spain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotels & Restaurants -->
+        <section class="section hotels">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hotels & Restaurants</h2>
+                    <a href="#" class="btn btn-secondary">View all</a>
+                </div>
+                <div class="grid-4">
+                    <div class="card hotel-card">
+                        <img src="assets/img-7.png" alt="Monastero Santa Rosa Hotel">
+                        <div class="card-content">
+                            <h3>Monastero Santa Rosa Hotel</h3>
+                            <div class="rating">
+                                <span class="location">Salerno, Italy</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hotel-card">
+                        <img src="assets/img-8.png" alt="Grand Hotel Tremezzo">
+                        <div class="card-content">
+                            <h3>Grand Hotel Tremezzo</h3>
+                            <div class="rating">
+                                <span class="location">Lake Como, Italy</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hotel-card">
+                        <img src="assets/img-9.png" alt="The Oberoi Udaivilas, Udaipur">
+                        <div class="card-content">
+                            <h3>The Oberoi Udaivilas, Udaipur</h3>
+                            <div class="rating">
+                                <span class="location">Udaipur, India</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hotel-card">
+                        <img src="assets/img-10.png" alt="AKA Beverly Hills">
+                        <div class="card-content">
+                            <h3>AKA Beverly Hills</h3>
+                            <div class="rating">
+                                <span class="location">Los Angeles, United States</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips & Advice -->
+        <section class="section tips">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Travel Tips & Advice</h2>
+                    <a href="#" class="btn btn-secondary">View all</a>
+                </div>
+                <div class="grid-2">
+                    <div class="card tip-card">
+                        <div class="tip-image">
+                            <img src="assets/img-11.png" alt="Ice Cream">
+                        </div>
+                        <div class="tip-content">
+                            <h3>East Village Ice Cream Crawl</h3>
+                            <p>We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At each ice cream store we’ll explore the story behind the business and see what makes the ice cream unique as you savor every...</p>
+                            <div class="meta">
+                                <span>Today</span>
+                                <span>Maria Philips</span>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tip-card">
+                        <div class="tip-image">
+                            <img src="assets/img-12.png" alt="Brooklyn Bridge">
+                        </div>
+                        <div class="tip-content">
+                            <h3>Brooklyn Bridge cinematic photo walk</h3>
+                            <p>This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I'm always open to capture clients at different locations upon request for an additional charge.</p>
+                            <div class="meta">
+                                <span>Today</span>
+                                <span>James Calzoni</span>
+                                <span>17</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities -->
+        <section class="section activities">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Activities</h2>
+                    <a href="#" class="btn btn-secondary">View all</a>
+                </div>
+                <div class="grid-4">
+                    <div class="card activity-card">
+                        <img src="assets/img-13.png" alt="Sailing">
+                        <h3>Sailing</h3>
+                    </div>
+                    <div class="card activity-card">
+                        <img src="assets/img-14.png" alt="Climbing">
+                        <h3>Climbing</h3>
+                    </div>
+                    <div class="card activity-card">
+                        <img src="assets/img-15.png" alt="Skiing">
+                        <h3>Skiing</h3>
+                    </div>
+                    <div class="card activity-card">
+                        <img src="assets/img.png" alt="Hiking">
+                        <h3>Hiking</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <img src="assets/img-10.png" alt="Hot Air Balloons" class="video-bg">
+            <button class="play-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq">
+            <div class="container">
+                <div class="faq-header">
+                    <h2 class="section-title">FAQ.</h2>
+                    <p>Some frequently asked questions from our devoted customers. If you still have questions kindly contact customer care <a href="#" class="faq-link">here</a>.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How much does it cost to go round the world?
+                            <span class="icon"></span>
+                        </button>
+                        <div class="faq-answer" style="display: none;">
+                            <p>The cost of a round-the-world trip varies greatly depending on your travel style, destinations, and duration. On average, budget travelers can expect to spend $20,000-$30,000 for a year-long journey, while mid-range travelers might spend $30,000-$50,000. This typically includes flights, accommodation, food, activities, and insurance. We offer customizable packages to fit different budgets and can help you plan the perfect itinerary within your price range.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Where can I pay?
+                            <span class="icon"></span>
+                        </button>
+                        <div class="faq-answer" style="display: none;">
+                            <p>We accept multiple payment methods for your convenience: all major credit and debit cards (Visa, Mastercard, American Express), PayPal, bank transfers, and digital wallets like Apple Pay and Google Pay. All transactions are secured with 256-bit SSL encryption. You can pay in full or choose our flexible payment plan options for bookings over $2,000.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Does this include round trips?
+                            <span class="icon"></span>
+                        </button>
+                        <div class="faq-answer" style="display: none;">
+                            <p>Yes! All our travel packages include round-trip flights from your departure city unless otherwise specified. We work with major airlines to secure the best routes and prices. Your package also includes airport transfers, accommodation, and select activities. For multi-destination trips, all connecting flights are included. You can view the complete itinerary and flight details in your booking confirmation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Are kids allowed?
+                            <span class="icon"></span>
+                        </button>
+                        <div class="faq-answer" style="display: none;">
+                            <p>Absolutely! We love traveling families and most of our tours are family-friendly. Children under 2 travel free on most packages, and we offer special discounts for children aged 2-12. We can arrange child-friendly accommodations, meals, and activities. Some adventure activities like scuba diving or extreme sports may have minimum age requirements (usually 12-16 years), which are clearly marked in the activity descriptions. We also offer dedicated family tour packages designed specifically for travelers with children.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container newsletter-container">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon"><img src="assets/Subcribe_icon.png" alt="Subscribe"></div>
+                    <h2>Subscribe to receive special offers from our expert team.</h2>
+                </div>
+                 <form class="newsletter-form">
+                    <input type="email" placeholder="example@gmail.com">
+                    <button type="submit" class="btn-subscribe">Subscribe <span class="arrow">→</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/Branding_white.png" alt="Ober Logo">
+                </a>
+                <p>We always make our customers happy by providing as many options as possible.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Social</h4>
+                <a href="#">Instagram <span class="arrow">→</span></a>
+                <a href="#">LinkedIn <span class="arrow">→</span></a>
+                <a href="#">Youtube <span class="arrow">→</span></a>
+                <a href="#">X <span class="arrow">→</span></a>
+            </div>
+            <div class="footer-scroll">
+                <a href="#">Back to top ↑</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>Copyright 2025 © ober inc All rights reserved.</p>
+            <p>Built with craft by AZEEZ</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html> 

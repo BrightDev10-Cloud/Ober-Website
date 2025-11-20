@@ -21,10 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Set initial state for all but the first item
             if (!item.isEqualNode(faqItems[0])) {
                 answer.style.maxHeight = null;
+                answer.style.display = 'none';
                 item.classList.remove('active');
             } else {
                 // Ensure the first item is active by default
                 item.classList.add('active');
+                answer.style.display = 'block';
                 answer.style.maxHeight = answer.scrollHeight + 'px';
             }
 
@@ -34,12 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Close all items
                 faqItems.forEach(i => {
                     i.classList.remove('active');
-                    i.querySelector('.faq-answer').style.maxHeight = null;
+                    const ans = i.querySelector('.faq-answer');
+                    ans.style.maxHeight = null;
+                    ans.style.display = 'none';
                 });
 
                 // If the clicked item was not already active, open it
                 if (!isActive) {
                     item.classList.add('active');
+                    answer.style.display = 'block';
                     answer.style.maxHeight = answer.scrollHeight + 'px';
                 }
             });
